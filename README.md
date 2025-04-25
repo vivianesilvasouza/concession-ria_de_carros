@@ -68,8 +68,6 @@ cars_project/
 1. Clone o repositório:
 
 ```bash
-Copiar
-Editar
 git clone https://github.com/seu-usuario/nome-do-repo.git
 cd nome-do-repo
 ```
@@ -77,8 +75,6 @@ cd nome-do-repo
 2. Crie um ambiente virtual e ative:
 
 ```bash
-Copiar
-Editar
 python -m venv venv
 source venv/bin/activate        # Linux/macOS
 venv\Scripts\activate           # Windows
