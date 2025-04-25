@@ -22,7 +22,7 @@ Praticar os principais recursos do Django:
 - Python 3.10+
 - Django 4.x
 - SQLite (banco de dados padrão do Django)
-- HTML5 + CSS3 (com Bootstrap opcional)
+- HTML5 + CSS3
 - Pillow (para upload e manipulação de imagens)
 
 ---
