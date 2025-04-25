@@ -2,6 +2,8 @@
 
 Este é um projeto de estudo desenvolvido com **Django** que simula uma **concessionária de veículos**, com área administrativa para o dono da loja e uma página pública para os clientes visualizarem os carros disponíveis.
 
+---
+
 ## 📚 Objetivo
 
 Praticar os principais recursos do Django:
@@ -13,17 +15,21 @@ Praticar os principais recursos do Django:
 - Templates com HTML + Django
 - CRUD completo (Create, Read, Update, Delete)
 
-## 🛠️ Tecnologias
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 - Python 3.10+
 - Django 4.x
-- SQLite (padrão do Django)
+- SQLite (banco de dados padrão do Django)
 - HTML5 + CSS3 (com Bootstrap opcional)
-- Pillow (para upload de imagens)
+- Pillow (para upload e manipulação de imagens)
+
+---
 
 ## ⚙️ Funcionalidades
 
-### 👤 Área do Administrador (Dono da Concessionária)
+### 👤 Área Administrativa (Dono da Concessionária)
 
 - Login via Django Admin
 - Adicionar novos carros com:
@@ -32,12 +38,14 @@ Praticar os principais recursos do Django:
   - Ano de fabricação e modelo
   - Preço
   - Imagem do carro
-- Editar ou remover carros existentes
+- Editar ou excluir carros existentes
 
-### 🌐 Área do Cliente (Público)
+### 🌐 Área Pública (Clientes)
 
-- Página com listagem de todos os carros disponíveis
-- Visualização dos detalhes do carro (opcional)
+- Visualização de todos os carros disponíveis
+- (Opcional) Detalhes individuais de cada carro
+
+---
 
 ## 📂 Estrutura de Pastas
 
@@ -49,43 +57,61 @@ cars_project/
 │   ├── views.py          # Views públicas
 │   ├── templates/
 │   │   └── cars/         # Templates HTML
-├── media/                # Imagens dos carros
+├── media/                # Imagens dos carros (upload)
 ├── static/               # Arquivos estáticos (opcional)
-├── db.sqlite3            # Banco de dados
+├── db.sqlite3            # Banco de dados local
 ├── manage.py
-▶️ Como rodar o projeto
-Clone o repositório:
+```
 
-bash
+## ▶️ Como Rodar o Projeto
 
+1. Clone o repositório:
+
+```bash
+Copiar
+Editar
 git clone https://github.com/seu-usuario/nome-do-repo.git
 cd nome-do-repo
-Crie um ambiente virtual e ative:
+```
 
-bash
+2. Crie um ambiente virtual e ative:
 
+```bash
+Copiar
+Editar
 python -m venv venv
-source venv/bin/activate  # ou venv\Scripts\activate no Windows
-Instale as dependências:
+source venv/bin/activate        # Linux/macOS
+venv\Scripts\activate           # Windows
+```
 
-bash
+3. Instale as dependências:
+
+```bash
 
 pip install -r requirements.txt
-Execute as migrações:
+```
 
-bash
+4. Aplique as migrações:
+
+```bash
 
 python manage.py migrate
-Crie um superusuário:
+```
 
-bash
+5. Crie um superusuário para acessar o admin:
+
+```bash
 
 python manage.py createsuperuser
-Inicie o servidor:
+```
 
-bash
+6. Inicie o servidor de desenvolvimento:
+
+```bash
 
 python manage.py runserver
-Acesse:
+```
 
-Admin: http://localhost:8000/admin
+7. Acesse no navegador:
+
+Admin: <http://localhost:8000/admin>
