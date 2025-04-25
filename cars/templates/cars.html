@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carros do jampa</title>
 </head>
+{%block content%}
 
 <body>
-    <h1>Bem vindo a carros do Jampa</h1>
+    {% for car in cars %}
+    <h1>{{car.brand}} - {{car.model}} - {{car.factory_year}}</h1>
+    {% endfor %}
 </body>
+{% endblock %}
+
 
 </html>
