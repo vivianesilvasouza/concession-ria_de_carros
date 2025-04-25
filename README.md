@@ -68,8 +68,8 @@ cars_project/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
+git clone git@github.com:vivianesilvasouza/concession-ria_de_carros.git
+cd concession-ria_de_carros
 ```
 
 2. Crie um ambiente virtual e ative:
